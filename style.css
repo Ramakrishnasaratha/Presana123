@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 350px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.birthday-text {
+    font-size: 32px;
+    color: #ff4081;
+    animation: pop 0.8s ease-in-out;
+}
+
+.message {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #444;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #d81b60;
+}
+
+.hidden {
+    display: none;
+}
+
+.surprise-box {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.cake-img {
+    width: 150px;
+    margin-top: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
